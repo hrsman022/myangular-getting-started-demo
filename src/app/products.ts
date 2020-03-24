@@ -1,4 +1,4 @@
-export const calculators = [
+export const products = [
   {
     name: 'ARV Calculator',
     price: 799,
