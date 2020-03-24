@@ -6,6 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { CalculatorListComponent } from './calculator-list/calculator-list.component';
+import { AddABuyerComponent } from './add-a-buyer/add-a-buyer.component';
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import { CalculatorListComponent } from './calculator-list/calculator-list.compo
   declarations: [
     AppComponent,
     TopBarComponent,
-    CalculatorListComponent
+    CalculatorListComponent,
+    AddABuyerComponent
   ],
   bootstrap: [ AppComponent ]
 })
