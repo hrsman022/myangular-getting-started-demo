@@ -7,14 +7,17 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ClientsComponent } from './clients/clients.component';
+import { ClientDetailsComponent } from './client-details/client-details.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
-      
+      { path: '', component: ClientsComponent },
+      // { path: '', component: ProductListComponent },
+      { path: 'products', component: ProductListComponent },
+      { path: 'clients/:clientId', component: ClientDetailsComponent }
     ])
   ],
   declarations: [
@@ -22,6 +25,7 @@ import { ClientsComponent } from './clients/clients.component';
     TopBarComponent,
     ProductListComponent,
     ClientsComponent,
+    ClientDetailsComponent,
   ],
   bootstrap: [ AppComponent ]
 })

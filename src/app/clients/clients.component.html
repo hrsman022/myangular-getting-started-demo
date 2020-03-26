@@ -1,8 +1,8 @@
 <h2>Client List</h2>
+<button (click)="share()">Add New Client</button>
 <div *ngFor="let clients of clients">
-  <h3><a [title]="'View' + clients.business" {{ clients.business }}</h3>
+  <h3><a [title]="'View ' + clients.business"> {{ clients.business }}</a></h3>
 </div>
-
 <!-- 
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
