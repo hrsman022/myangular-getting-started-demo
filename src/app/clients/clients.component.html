@@ -1,7 +1,7 @@
 <h2>Client List</h2>
 <button (click)="share()">Add New Client</button>
-<div *ngFor="let clients of clients">
-  <h3><a [title]="'View ' + clients.business"> {{ clients.business }}</a></h3>
+<div *ngFor="let clients of clients; index as clientId">
+  <h3><a [routerLink]="['/clients', clientId]" [title]="'View ' + clients.business">{{ clients.business }}</a></h3>
 </div>
 <!-- 
 Copyright Google LLC. All Rights Reserved.
