@@ -6,6 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { ClientsComponent } from './clients/clients.component';
 
 @NgModule({
   imports: [
@@ -19,6 +20,7 @@ import { ProductListComponent } from './product-list/product-list.component';
     AppComponent,
     TopBarComponent,
     ProductListComponent,
+    ClientsComponent,
   ],
   bootstrap: [ AppComponent ]
 })
