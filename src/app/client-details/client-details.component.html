@@ -1,0 +1,6 @@
+<h2>Product Details</h2>
+
+<div *ngIf="client">
+  <h3>{{ client.business }}<Br>{{ client.address }} {{ client.city }}, {{ client.state }} {{ client.zip }}</h3>
+  <p>Name: {{ client.owner }}<br>Phone: {{ client.phone }}<br>Email: {{ client.email }}</p>
+</div>
