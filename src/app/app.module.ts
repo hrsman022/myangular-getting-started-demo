@@ -14,6 +14,7 @@ import { ClientsComponent } from './clients/clients.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
+      
     ])
   ],
   declarations: [

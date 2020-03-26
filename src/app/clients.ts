@@ -1,4 +1,4 @@
-export const BuyersList = [
+export const clients = [
   {
     business: 'Boufford Builders Inc',
     owner: 'James Boufford',
@@ -8,17 +8,26 @@ export const BuyersList = [
     zip: '48623',
     phone: '9896954663',
     email: 'Unknown',
-
   },
   {
-    name: 'Repair Cost Calculator',
-    price: 699,
-    description: 'This will calculate the cost of repairs.'
+    business: 'Boufford Builders Inc 2',
+    owner: 'James Boufford',
+    address: '8411 W Freeland Rd',
+    city: 'Freeland',
+    state: 'MI',
+    zip: '48623',
+    phone: '9896954663',
+    email: 'Unknown',
   },
   {
-    name: 'MAO',
-    price: 299,
-    description: 'This is will help determine the maximumn offer allowed.'
+    business: 'Boufford Builders Inc 3',
+    owner: 'James Boufford',
+    address: '8411 W Freeland Rd',
+    city: 'Freeland',
+    state: 'MI',
+    zip: '48623',
+    phone: '9896954663',
+    email: 'Unknown',
   }
 ];
 

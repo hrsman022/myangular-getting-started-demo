@@ -13,6 +13,10 @@ export const products = [
     name: 'MAO',
     price: 299,
     description: 'This is will help determine the maximumn offer allowed.'
+  },
+  {
+    name: 'Client List',
+    description: 'List of all investors'
   }
 ];
 
