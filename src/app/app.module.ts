@@ -8,6 +8,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ClientsComponent } from './clients/clients.component';
 import { ClientDetailsComponent } from './client-details/client-details.component';
+import { PhonePipe } from './phone.pipe';
 
 @NgModule({
   imports: [
@@ -26,6 +27,7 @@ import { ClientDetailsComponent } from './client-details/client-details.componen
     ProductListComponent,
     ClientsComponent,
     ClientDetailsComponent,
+    PhonePipe,
   ],
   bootstrap: [ AppComponent ]
 })

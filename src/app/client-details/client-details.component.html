@@ -2,5 +2,9 @@
 
 <div *ngIf="client">
   <h3>{{ client.business }}<Br>{{ client.address }} {{ client.city }}, {{ client.state }} {{ client.zip }}</h3>
-  <p>Name: {{ client.owner }}<br>Phone: {{ client.phone }}<br>Email: {{ client.email }}</p>
+  <p>Name: {{ client.owner }}<br>Phone: {{ client.phone | phone:'US' }}<br>Email: {{ client.email }}</p>
+  <p>Area of Interest: {{client.fliplocation}}</p>
+  <div *ngIf="client.flipped">
+    <h3>Recently Flipped Homes:</h3>
+    <p>{{ client.flipped }}</p></div>
 </div>
