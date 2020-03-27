@@ -10,8 +10,8 @@ import { clients } from '../clients';
 export class ClientsComponent {
   clients = clients;
 
-  share() {
-    window.alert('The product has been shared!');
+  addClient() {
+    window.alert('Work in Progress');
   }
 }
 /*
