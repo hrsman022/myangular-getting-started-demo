@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { clients } from '../clients';
+import { salehistory } from '../salehistory';
 
 @Component({
   selector: 'app-client-details',

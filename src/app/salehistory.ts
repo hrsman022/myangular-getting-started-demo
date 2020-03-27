@@ -4,7 +4,7 @@ export const SaleHistory = [
     purchaseprice: '55000',
     purchasedate: '04-04-2019'
     flippeddate: '02-24-2020'
-  },
+  }
 ];
 
 

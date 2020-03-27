@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { clients } from '../clients';
+import { salehistory } from '../salehistory';
 
 @Component({
   selector: 'app-clients',
