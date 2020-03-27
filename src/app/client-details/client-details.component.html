@@ -8,3 +8,7 @@
     <h3>Recently Flipped Homes:</h3>
     <p>{{ client.flipped }}</p></div>
 </div>
+<!-- This will display a map of houses flipped -->
+<div *ngIf="client.flipped">
+  <div id="viewDiv"></div>
+</div>
