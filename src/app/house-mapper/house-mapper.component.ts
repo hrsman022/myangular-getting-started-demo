@@ -8,11 +8,11 @@ import { MouseEvent } from '@agm/core';
 })
 export class HouseMapperComponent implements OnInit {
   // google maps zoom level
-  zoom: number = 8;
+  zoom: number = 15;
   
   // initial center position for the map
-  lat: number = 51.673858;
-  lng: number = 7.815982;
+  lat: number = 43.4313021;
+  lng: number = -84.0251066;
 
   clickedMarker(label: string, index: number) {
     console.log(`clicked the marker: ${label || index}`)
@@ -32,23 +32,23 @@ export class HouseMapperComponent implements OnInit {
   
   markers: marker[] = [
 	  {
-		  lat: 51.673858,
-		  lng: 7.815982,
+		  lat: 43.4313021,
+		  lng: -84.0251066,
 		  label: 'A',
 		  draggable: true
-	  },
-	  {
-		  lat: 51.373858,
-		  lng: 7.215982,
-		  label: 'B',
-		  draggable: false
-	  },
-	  {
-		  lat: 51.723858,
-		  lng: 7.895982,
-		  label: 'C',
-		  draggable: true
 	  }
+	  // {
+		//   lat: 43.6245813,
+		//   lng: -84.3062422,
+		//   label: 'B',
+		//   draggable: false
+	  // },
+	  // {
+		//   lat: 43.4248999,
+		//   lng: -83.9837438,
+		//   label: 'C',
+		//   draggable: true
+	  // }
   ]
 }
 

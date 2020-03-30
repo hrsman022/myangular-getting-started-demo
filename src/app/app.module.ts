@@ -17,7 +17,7 @@ import { AgmCoreModule } from '@agm/core';
     BrowserModule,
     ReactiveFormsModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAvcDy5ZYc2ujCS6TTtI3RYX5QmuoV8Ffw'
+      apiKey: 'AIzaSyCnNro6OnOsrI1ncVxFuvvRAGoD0OkZjis'
     }),
     RouterModule.forRoot([
       { path: '', component: ClientsComponent },
