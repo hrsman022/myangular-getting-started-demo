@@ -9,6 +9,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ClientsComponent } from './clients/clients.component';
 import { ClientDetailsComponent } from './client-details/client-details.component';
 import { PhonePipe } from './phone.pipe';
+import { HouseMapperComponent } from './house-mapper/house-mapper.component';
 
 @NgModule({
   imports: [
@@ -28,6 +29,7 @@ import { PhonePipe } from './phone.pipe';
     ClientsComponent,
     ClientDetailsComponent,
     PhonePipe,
+    HouseMapperComponent,
   ],
   bootstrap: [ AppComponent ]
 })

@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
+    "@agm/core": "^1.1.0",
     "@angular-builders/custom-webpack": "^9.0.0",
     "@angular/animations": "^9.1.0",
     "@angular/common": "^9.1.0",
