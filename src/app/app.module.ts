@@ -10,11 +10,15 @@ import { ClientsComponent } from './clients/clients.component';
 import { ClientDetailsComponent } from './client-details/client-details.component';
 import { PhonePipe } from './phone.pipe';
 import { HouseMapperComponent } from './house-mapper/house-mapper.component';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAvcDy5ZYc2ujCS6TTtI3RYX5QmuoV8Ffw'
+    }),
     RouterModule.forRoot([
       { path: '', component: ClientsComponent },
       // { path: '', component: ProductListComponent },
