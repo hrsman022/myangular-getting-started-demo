@@ -5,11 +5,6 @@
   <p>Name: {{ client.owner }}<br>Phone: {{ client.phone | phone:'US' }}<br>Email: {{ client.email }}</p>
   <p>Area of Interest: {{client.fliplocation}}</p>
   <hr>
-  <!-- <ul>
-    <li *ngFor="let house of client.homes">
-      <pre>{{ house | json }}</pre>
-    </li>
-  </ul> -->
   <h3>Recently Flipped Homes:</h3>
   <table class="table">
   <thead>
@@ -29,5 +24,5 @@
     </tr>
   </tbody>
   </table>
-  <app-house-mapper></app-house-mapper>
+  <app-house-mapper [data]="client.homes"></app-house-mapper>
 </div>
