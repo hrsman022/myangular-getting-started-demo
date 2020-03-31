@@ -3,6 +3,8 @@ export const clients = [
     business: 'Boufford Builders Inc',
     owner: 'James Boufford',
     address: '8411 W Freeland Rd',
+    lat: '43.5191679',
+    long: '-84.0816417',
     city: 'Freeland',
     state: 'MI',
     zip: '48623',
@@ -10,6 +12,8 @@ export const clients = [
     email: '',
     fliplocation: 'Saginaw',
     flipped: '1611 Van Wagoner Dr, Saginaw, MI 48638',
+    fliplong: '43.4313021',
+    fliplat: '-84.0251066',
   },
   {
     business: 'KKR Properties LLC',
