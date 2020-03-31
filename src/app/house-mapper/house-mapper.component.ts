@@ -3,6 +3,14 @@ import { ActivatedRoute } from '@angular/router';
 import { MouseEvent } from '@agm/core';
 import { clients } from '../clients';
 
+// just an interface for type safety.
+interface marker {
+	lat: number;
+	lng: number;
+	label?: string;
+	draggable: boolean;
+}
+
 @Component({
   selector: 'app-house-mapper',
   templateUrl: './house-mapper.component.html',
@@ -28,7 +36,7 @@ export class HouseMapperComponent implements OnInit {
             lat: item.lat,
             lng: item.lng,
             label: item.address.addressLine1,
-            draggable: true
+            draggable: false,
           }
         );
       }
