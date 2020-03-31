@@ -5,11 +5,29 @@
   <p>Name: {{ client.owner }}<br>Phone: {{ client.phone | phone:'US' }}<br>Email: {{ client.email }}</p>
   <p>Area of Interest: {{client.fliplocation}}</p>
   <hr>
-  <ul>
+  <!-- <ul>
     <li *ngFor="let house of client.homes">
       <pre>{{ house | json }}</pre>
     </li>
-  </ul>
+  </ul> -->
   <h3>Recently Flipped Homes:</h3>
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Address</th>
+      <th scope="col">City</th>
+      <th scope="col">State</th>
+      <th scope="col">Zip</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let house of client.homes">
+      <td>{{ house.address.addressLine1 }}</td>
+      <td>{{ house.address.city }}</td>
+      <td>{{ house.address.state }}</td>
+      <td>{{ house.address.zip }}</td>
+    </tr>
+  </tbody>
+  </table>
   <app-house-mapper></app-house-mapper>
 </div>
