@@ -4,14 +4,14 @@
   <h3>{{ client.business }}<Br>{{ client.address }} {{ client.city }}, {{ client.state }} {{ client.zip }}</h3>
   <p>Name: {{ client.owner }}<br>Phone: {{ client.phone | phone:'US' }}<br>Email: {{ client.email }}</p>
   <p>Area of Interest: {{client.fliplocation}}</p>
-  
-  <div *ngIf="client.flipped">
+  <!-- <div *ngIf="client.flipped">
     <h3>Recently Flipped Homes:</h3>
     <p>{{ client.flipped }}</p>
     <p>Purchase Price:</p>
     <p>Purchase Date: </p>
     <p>Sale Date: </p>
-  </div>
+  </div> -->
   <hr>
+  <h3>Recently Flipped Homes:</h3>
   <app-house-mapper></app-house-mapper>
 </div>

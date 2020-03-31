@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { MouseEvent } from '@agm/core';
+import { clients } from '../clients';
 
 @Component({
   selector: 'app-house-mapper',
@@ -9,6 +11,7 @@ import { MouseEvent } from '@agm/core';
 export class HouseMapperComponent implements OnInit {
   // google maps zoom level
   zoom: number = 15;
+  client;
   
   // initial center position for the map
   lat: number = 43.4313021;
@@ -50,8 +53,16 @@ export class HouseMapperComponent implements OnInit {
 		//   draggable: true
 	  // }
   ]
-}
+  constructor(
+    private route: ActivatedRoute,
+  ) { }
 
+  ngOnInit() {
+  this.route.paramMap.subscribe(params => {
+    this.client = clients[+params.get('clientId')];
+  });
+}
+}
 // just an interface for type safety.
 interface marker {
 	lat: number;

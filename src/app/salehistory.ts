@@ -1,6 +1,9 @@
-export const SaleHistory = [
+export const salehistory = [
   {
-    address: 'Boufford Builders Inc',
+    owner: 'Boufford Builders Inc',
+    address: '1611 Van Wagoner Dr, Saginaw, MI 48638',
+    long: '43.4313021',
+    lat: '-84.0251066',
     purchaseprice: '55000',
     purchasedate: '04-04-2019'
     flippeddate: '02-24-2020'
