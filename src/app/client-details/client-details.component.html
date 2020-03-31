@@ -21,7 +21,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let house of client.homes">
+    <tr class="flipList" *ngFor="let house of client.homes">
       <td>{{ house.address.addressLine1 }}</td>
       <td>{{ house.address.city }}</td>
       <td>{{ house.address.state }}</td>
