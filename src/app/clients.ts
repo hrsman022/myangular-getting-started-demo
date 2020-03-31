@@ -20,8 +20,8 @@ export const clients =
     state: 'MI',
     zip: 48638
     },
-    lng: '43.4313021',
-    lat: '-84.0251066',
+    lat: '43.4313021',
+    lng: '-84.0251066',
     },
     {
     address: {
@@ -31,8 +31,8 @@ export const clients =
     state: 'MI',
     zip: 48631
     },
-    lng: '43.681797',
-    lat: '-84.015594',
+    lat: '43.681797',
+    lng: '-84.015594',
     },
     ]
 },];

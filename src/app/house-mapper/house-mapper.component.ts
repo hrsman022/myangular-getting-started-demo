@@ -25,8 +25,8 @@ export class HouseMapperComponent implements OnInit {
       for (let item of this.data) {
         this.markers.push(
           {
-            lat: item.lng,
-            lng: item.lat,
+            lat: item.lat,
+            lng: item.lng,
             label: item.address.addressLine1,
             draggable: true
           }
